@@ -1,2 +1,3 @@
-/home/williamsleao/workspace/SQS-SpringBoot/src/main/java/com/codesqsspring/configuration/AmazonSQSConfiguration.java
-/home/williamsleao/workspace/SQS-SpringBoot/src/main/java/com/codesqsspring/SqsSpringBootApplication.java
+/home/ewerton/Documentos/workspace/AWS-SQS-SpringBoot/src/main/java/com/codesqsspring/SqsSpringBootApplication.java
+/home/ewerton/Documentos/workspace/AWS-SQS-SpringBoot/src/main/java/com/codesqsspring/controller/SQSController.java
+/home/ewerton/Documentos/workspace/AWS-SQS-SpringBoot/src/main/java/com/codesqsspring/configuration/AmazonSQSConfiguration.java

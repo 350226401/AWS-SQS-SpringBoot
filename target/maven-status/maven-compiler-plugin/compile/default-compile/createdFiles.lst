@@ -1,2 +1,3 @@
 com/codesqsspring/SqsSpringBootApplication.class
+com/codesqsspring/controller/SQSController.class
 com/codesqsspring/configuration/AmazonSQSConfiguration.class
