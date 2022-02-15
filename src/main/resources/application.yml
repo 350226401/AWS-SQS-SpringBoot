@@ -1,0 +1,17 @@
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    stack:
+      auto: false
+    credentials:
+      access-key: INSERIR CHAVE (SEM DELIMITAR COM ASPAS)
+      secret-key: INSERIR CHAVE SECRETA  (SEM DELIMITAR COM ASPAS)
+    end-point:
+      uri: https://sqs.us-east-1.amazonaws.com/570370830536/sqs-queue
+     #uri: copiar da fila criada na aws
+
+
+server:
+  port: 8083
