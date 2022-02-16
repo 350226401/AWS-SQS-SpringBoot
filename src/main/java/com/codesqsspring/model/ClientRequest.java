@@ -1,15 +1,14 @@
 package com.codesqsspring.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Data
+import java.io.Serializable;
+
 @Getter
 @Setter
-@Builder
-public class ClientRequest {
+@NoArgsConstructor
+@AllArgsConstructor
+public class ClientRequest implements Serializable {
 
     private String name;
     private String empresa;

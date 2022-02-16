@@ -1,15 +1,15 @@
 cloud:
   aws:
     region:
-      static: sa-east-1
+      static: us-east-1
       auto: false
     stack:
       auto: false
     credentials:
-      access-key: AKIA2IE6R7PEUBIPNY72
-      secret-key: 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
+      access-key: AKIAYJTGAGDENC7PUTYE
+      secret-key: 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
     end-point:
-      uri: https://sqs.sa-east-1.amazonaws.com/704707165129/MyQueue
+      uri: https://sqs.us-east-1.amazonaws.com/570370830536/myQueueTest
      #uri: copiar da fila criada na aws
 
 
