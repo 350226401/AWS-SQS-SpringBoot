@@ -1,14 +1,15 @@
 package com.codesqsspring.controller;
 
+import com.codesqsspring.model.ClientRequest;
+import com.codesqsspring.model.ClientResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.aws.messaging.core.QueueMessagingTemplate;
 import org.springframework.messaging.support.MessageBuilder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/client/save")
 public class SQSController {
 
     @Autowired
@@ -17,9 +18,15 @@ public class SQSController {
     @Value("${cloud.aws.end-point.uri}")
     private String endPoint;
 
-    @GetMapping("/put/{msg}")
-    public void putMessagedToQueue(@PathVariable("msg") String message) {
+    @PostMapping
+    public ClientResponse putMessagedToQueue(@RequestBody ClientRequest message) {
         queueMessagingTemplate.send(endPoint, MessageBuilder.withPayload(message).build());
+
+        return ClientResponse.builder()
+                .id(1)
+                .name(message.getName())
+                .empresa(message.getEmpresa())
+                .build();
     }
 
 }

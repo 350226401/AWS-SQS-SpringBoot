@@ -15,3 +15,8 @@ cloud:
 
 server:
   port: 8083
+
+app:
+  lambda:
+    client:
+      register: myLambdaTest

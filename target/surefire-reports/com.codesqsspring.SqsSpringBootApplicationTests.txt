@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.codesqsspring.SqsSpringBootApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.23 s <<< FAILURE! - in com.codesqsspring.SqsSpringBootApplicationTests
-contextLoads  Time elapsed: 0.003 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpleMessageListenerContainer' defined in class path resource [org/springframework/cloud/aws/messaging/config/annotation/SqsConfiguration.class]: Invocation of init method failed; nested exception is com.amazonaws.services.sqs.model.AmazonSQSException: 'CHAVE' not a valid key=value pair (missing equal-sign) in Authorization header: 'AWS4-HMAC-SHA256 Credential=INSERIR CHAVE (SEM DELIMITAR COM ASPAS)/20220215/us-east-1/sqs/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;host;user-agent;x-amz-date, Signature=a6600a1033a4d7834474f50c613aa2df186302079b799829ad794821b61c5b38'. (Service: AmazonSQS; Status Code: 400; Error Code: IncompleteSignature; Request ID: 36cf2296-06ea-5fd6-8728-7813edaa618c; Proxy: null)
-Caused by: com.amazonaws.services.sqs.model.AmazonSQSException: 'CHAVE' not a valid key=value pair (missing equal-sign) in Authorization header: 'AWS4-HMAC-SHA256 Credential=INSERIR CHAVE (SEM DELIMITAR COM ASPAS)/20220215/us-east-1/sqs/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;host;user-agent;x-amz-date, Signature=a6600a1033a4d7834474f50c613aa2df186302079b799829ad794821b61c5b38'. (Service: AmazonSQS; Status Code: 400; Error Code: IncompleteSignature; Request ID: 36cf2296-06ea-5fd6-8728-7813edaa618c; Proxy: null)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.47 s - in com.codesqsspring.SqsSpringBootApplicationTests
